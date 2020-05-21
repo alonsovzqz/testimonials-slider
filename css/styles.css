@@ -1,3 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --bark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.slider-container {
+}
+
+.testimonial-box {
+}
+
+.testimonial-img {
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.testimonial-img img {
+  width: 240px;
+  height: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.img-rounded {
+  border-radius: 4px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,3 +65,9 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
