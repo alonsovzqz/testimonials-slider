@@ -11,53 +11,100 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 300;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 img {
   width: 100%;
 }
 
+blockquote {
+  padding-top: 2rem;
+}
+
+cite {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* CONTENT */
 .container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
+/* SLIDER */
 .slider-container {
-}
-
-.testimonial-box {
-}
-
-.testimonial-img {
-  background-image: url("../images/pattern-bg.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
+  flex-flow: row nowrap;
+  background-image: url("../images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 55%;
 }
 
-.testimonial-img img {
-  width: 240px;
+.slider-item {
+  padding: 3rem 1rem;
+}
+
+/* TESTIMONIAL CONTAINER */
+.testimonial-box {
   height: auto;
 }
 
+.testimonial-img-container {
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-img {
+  width: 80%;
+  height: 260px;
+}
+
+.testimonial-body {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 19%;
+}
+
+/* HELPERS */
 .hide {
   display: none;
 }
 
 .img-rounded {
-  border-radius: 4px;
+  border-radius: 0.3125rem;
 }
 
+.quote {
+  margin-bottom: 1.5rem;
+}
+
+.job-role {
+  font-weight: 500;
+  color: var(--grayish-blue);
+  margin-top: 0.4rem;
+}
+
+/* FOOTER */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -65,9 +112,3 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
