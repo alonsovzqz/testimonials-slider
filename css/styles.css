@@ -53,6 +53,22 @@ cite {
   padding: 3rem 1rem;
 }
 
+.slider-controls {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 42%;
+  left: 40%;
+}
+
+.slider-btn {
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  background-color: white;
+  font-size: 0.1rem;
+  margin-right: -1px; /* Fixes a small bug on Chrome*/
+}
+
 /* TESTIMONIAL CONTAINER */
 .testimonial-box {
   height: auto;
@@ -73,6 +89,9 @@ cite {
 .testimonial-img {
   width: 80%;
   height: 70%;
+  -webkit-box-shadow: 0px 15px 32px -3px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 15px 32px -3px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 15px 32px -3px rgba(0, 0, 0, 0.09);
 }
 
 .testimonial-body {
@@ -102,6 +121,16 @@ cite {
   font-weight: 500;
   color: var(--grayish-blue);
   margin-top: 0.4rem;
+}
+
+.prev {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.next {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 /* FOOTER */
