@@ -141,3 +141,50 @@ cite {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 992px) {
+  blockquote {
+    width: 65%;
+  }
+  /* SLIDER */
+  .slider-controls {
+    top: 46%;
+    left: 69%;
+  }
+
+  /* TESTIMONIAL CONTAINER */
+  .testimonial-box {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+  }
+
+  .testimonial-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: left;
+    background-position: 10% 30%;
+    background-size: 10%;
+    position: relative;
+    left: 30%;
+  }
+
+  .testimonial-img {
+    height: 80%;
+    width: 85%;
+  }
+
+  cite {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;
+  }
+
+  cite p:first-child {
+    margin-right: 0.4rem;
+  }
+
+  .job-role {
+    margin-top: unset;
+  }
+}
