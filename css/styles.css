@@ -179,5 +179,56 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+  .slider {
+    height: 60vh;
+  }
+
+  .slider::after {
+    bottom: 15%;
+    width: 70%;
+    height: 100px;
+  }
+
+  .slider__item.item--active {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+  }
+
+  .slider__image-container {
+    flex-basis: 45%;
+  }
+
+  .slider__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 55%;
+    text-align: initial;
+    left: 12%;
+  }
+
+  .slider__text::before {
+    top: 65px;
+    left: 20%;
+  }
+
+  .slider__job-position {
+    display: inline;
+    margin-left: 5px;
+  }
+
+  .slider__controls-container {
+    top: 52%;
+    left: 62%;
+  }
+
+  .slider__control {
+    padding: 0.1rem 0.9rem;
+  }
+
+  .slider__control-image {
+    width: 70%;
+    height: auto;
+  }
 }
