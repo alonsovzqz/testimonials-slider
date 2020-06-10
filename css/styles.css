@@ -164,11 +164,6 @@ img {
 }
 
 /* HELPERS */
-.disabled {
-  cursor: default;
-  pointer-events: none;
-  background-color: #ededed;
-}
 
 /* FOOTER */
 .attribution {
@@ -223,7 +218,7 @@ img {
   }
 
   .slider__controls-container {
-    top: 52%;
+    top: 42%;
     left: 62%;
   }
 
@@ -235,4 +230,7 @@ img {
     width: 70%;
     height: auto;
   }
+}
+
+@media only screen and (min-width: 992px) {
 }
