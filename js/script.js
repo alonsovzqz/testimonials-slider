@@ -22,13 +22,18 @@ SLIDER_NEXT.addEventListener("click", function () {
   TESTIMONIALS[currentSlider].classList.remove("item--active");
   TESTIMONIALS[nextSlider].classList.add("item--active");
 
+  currentSlider = nextSlider;
+  nextSlider = nextSlider === TESTIMONIALS.length - 1 ? 0 : nextSlider + 1;
+
   setTimeout(function () {
-    TESTIMONIALS[currentSlider].classList.remove("slider__item-prev");
-    TESTIMONIALS[nextSlider].classList.remove("slider__item-next");
+    TESTIMONIALS.forEach((slide) => {
+      if (slide.classList.contains("slider__item-next")) {
+        slide.classList.remove("slider__item-next");
+      } else if (slide.classList.contains("slider__item-prev")) {
+        slide.classList.remove("slider__item-prev");
+      }
+    });
   }, 500);
 
   clearTimeout();
-
-  currentSlider = nextSlider;
-  nextSlider = nextSlider === TESTIMONIALS.length - 1 ? 0 : nextSlider + 1;
 });
