@@ -165,8 +165,6 @@ img {
   border-bottom-left-radius: 0;
 }
 
-/* HELPERS */
-
 /* FOOTER */
 .attribution {
   font-size: 11px;
@@ -198,9 +196,6 @@ img {
     bottom: 15%;
     width: 70%;
     height: 100px;
-  }
-
-  .slider__item.item--active {
   }
 
   .slider__image-container {
@@ -244,7 +239,4 @@ img {
     width: 70%;
     height: auto;
   }
-}
-
-@media only screen and (min-width: 992px) {
 }

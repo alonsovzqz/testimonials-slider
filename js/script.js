@@ -2,9 +2,20 @@ const TESTIMONIALS = document.querySelectorAll(".slider__item");
 const SLIDER_PREV = document.querySelector(".slider__control.control--prev");
 const SLIDER_NEXT = document.querySelector(".slider__control.control--next");
 let currentSlider = 0;
-let nextSlider = currentSlider + 1;
-let previousSlider =
-  currentSlider === 0 ? TESTIMONIALS.length - 1 : currentSlider - 1;
+let nextSlider = 0;
+let previousSlider = 0;
+
+function getCurrentSlider() {
+  TESTIMONIALS.forEach((slide, index) => {
+    if (slide.classList.contains("item--active")) {
+      currentSlider = index;
+      nextSlider =
+        currentSlider === TESTIMONIALS.length - 1 ? 0 : nextSlider + 1;
+      previousSlider =
+        currentSlider === 0 ? TESTIMONIALS.length - 1 : previousSlider - 1;
+    }
+  });
+}
 
 function removeAnimationSliderClasses() {
   setTimeout(function () {
@@ -27,9 +38,7 @@ SLIDER_PREV.addEventListener("click", function () {
   TESTIMONIALS[currentSlider].classList.remove("item--active");
   TESTIMONIALS[previousSlider].classList.add("item--active");
 
-  currentSlider = previousSlider;
-  previousSlider =
-    currentSlider === 0 ? TESTIMONIALS.length - 1 : currentSlider - 1;
+  getCurrentSlider();
 
   removeAnimationSliderClasses();
 });
@@ -41,8 +50,9 @@ SLIDER_NEXT.addEventListener("click", function () {
   TESTIMONIALS[currentSlider].classList.remove("item--active");
   TESTIMONIALS[nextSlider].classList.add("item--active");
 
-  currentSlider = nextSlider;
-  nextSlider = nextSlider === TESTIMONIALS.length - 1 ? 0 : nextSlider + 1;
+  getCurrentSlider();
 
   removeAnimationSliderClasses();
 });
+
+getCurrentSlider();
