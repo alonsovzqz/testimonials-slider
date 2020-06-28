@@ -219,7 +219,7 @@ cite {
 
 /* Media Queries */
 /* Small devices */
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 480px) {
   .slider__controls-container {
     left: 10em;
     bottom: 16em;
@@ -227,7 +227,7 @@ cite {
 }
 
 /* iPad & Tablets */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 768px) {
   .slider__items-container {
     min-height: 30vh;
     background-size: 50%;
@@ -276,7 +276,7 @@ cite {
 }
 
 /* Small screens & laptops */
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1024px) {
   .slider__image-container {
     padding: 3em;
   }
