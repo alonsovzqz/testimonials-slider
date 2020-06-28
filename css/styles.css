@@ -51,7 +51,7 @@ cite {
   animation-fill-mode: both;
 }
 
-.slider__item.item--active {
+.item--active {
   display: flex;
   flex-direction: column;
 }
@@ -219,7 +219,7 @@ cite {
 
 /* Media Queries */
 /* Small devices */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 30em) {
   .slider__controls-container {
     left: 10em;
     bottom: 16em;
@@ -227,7 +227,7 @@ cite {
 }
 
 /* iPad & Tablets */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   .slider__items-container {
     min-height: 30vh;
     background-size: 50%;
@@ -276,7 +276,7 @@ cite {
 }
 
 /* Small screens & laptops */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   .slider__image-container {
     padding: 3em;
   }
@@ -299,7 +299,7 @@ cite {
 }
 
 /* Desktop & large screens */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) {
   .slider__text {
     background-position: top 7.3em left 7.9em;
   }
