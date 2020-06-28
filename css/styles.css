@@ -299,7 +299,7 @@ cite {
 }
 
 /* Desktop & large screens */
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 1200px) {
   .slider__text {
     background-position: top 7.3em left 7.9em;
   }
